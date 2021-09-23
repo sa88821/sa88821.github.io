@@ -1,34 +1,24 @@
-<!doctype html>
-<!--
-Created using JS Bin
-http://bin.webduino.io
+<!DOCTYPE html>
+<!-- saved from url=(0046)file:///C:/Users/Student/Documents/github.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="robots" content="noindex">
 
-Copyright (c) 2021 by anonymous (http://bin.webduino.io/fosur/1/edit)
 
-Released under the MIT license: http://jsbin.mit-license.org
--->
-<meta name="robots" content="noindex">
-<html>
 
-<head>
-  <meta charset="utf-8">
+  
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <title>Webduino Blockly Demo 05</title>
-  <script src="http://bit.webduino.io/blockly/components/jquery/dist/jquery.min.js"></script>
-  <script src="http://bit.webduino.io/blockly/dist/lib/webduino-all.min.js"></script>
-  <script src="http://bit.webduino.io/blockly/dist/MessageTransport.min.js"></script>
-  <script src="http://bit.webduino.io/blockly/dist/webduino-blockly.min.js"></script>
-  <script src="http://bit.webduino.io/blockly/dist/lib/firebase.min.js"></script>
-  <script src="http://bit.webduino.io/blockly/dist/lib/runtime.min.js"></script>
-  <script src="http://bit.webduino.io/blockly/components/webduino-bit-module-led-matrix/BitLedMatrix-blockly.js"></script>
-  <script src="http://bit.webduino.io/blockly/components/webduino-bit-module-led-matrix/BitLedMatrix.js"></script>
-
-   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  
-  
+  <script src="./index_files/jquery.min.js.下載"></script>
+  <script src="./index_files/webduino-all.min.js.下載"></script>
+  <script src="./index_files/MessageTransport.min.js.下載"></script>
+  <script src="./index_files/webduino-blockly.min.js.下載"></script>
+  <script src="./index_files/firebase.min.js.下載"></script>
+  <script src="./index_files/runtime.min.js.下載"></script>
+  <script src="./index_files/BitLedMatrix-blockly.js.下載"></script>
+  <script src="./index_files/BitLedMatrix.js.下載"></script>
+  <link rel="stylesheet" href="./index_files/bootstrap.min.css">
+  <script src="./index_files/jquery.min.js(1).下載"></script>
+  <script src="./index_files/popper.min.js.下載"></script>
+  <script src="./index_files/bootstrap.min.js.下載"></script>
   <style id="jsbin-css">
 .db5 {
   font-size: 24px;
@@ -44,10 +34,12 @@ button:hover {
 </head>
 
 <body>
-     <h1 class="btn btn-info">榮壽的智慧宅</h1><BR>
-  <div><button id="demo-area-05-btn1" class="btn btn-outline-success">客</button>
-    <button id="demo-area-05-btn2" class="btn btn-outline-danger">廳</button>
-</div>
+     <h1 class="alert alert-success">榮壽的智慧宅</h1><br>
+  <div><button id="demo-area-05-btn1" class="btn btn-secondary">客</button>
+    <button id="demo-area-05-btn2" class="btn btn-dark">廳</button>
+
+  </div>
+
 <script id="jsbin-javascript">
 var matrix;
 
@@ -56,12 +48,11 @@ boardReady({board: 'Bit', device: 'LvyCGXumEigvu3LSpd', transport: 'mqtt'}, func
   board.samplingInterval = 250;
   matrix = getMatrix(board, 4, 25);
   document.getElementById("demo-area-05-btn1").addEventListener("click",function(){
-    matrix.setColor('#cc0000');
+    matrix.setColor('#33ccff');
   });
   document.getElementById("demo-area-05-btn2").addEventListener("click",function(){
-    matrix.setColor('#ffcc00');
+    matrix.setColor('#ff99ff');
   });
 });
 
-</script>
-</body>
+</script></body></html>
